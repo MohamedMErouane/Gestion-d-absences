@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url(green.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ /* Set form styles */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Set input styles */
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Set button styles */
+form .btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the input containers */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+    
+
+</style>
+<body>
+    <form action="index.php" method="post">
+        <h1>Information d'etudiant</h1>
+        <div class="inputname">
+        <label for="Name">   <br>
+        </label>
+        <input name="Name" type="text" placeholder="Name"> <br>
+    </div>
+    <div class="inputname">
+        <label > <br>
+        </label>
+        <input name="FI" type="text" placeholder="Filiere"> <br>
+    </div>
+    <div class="inputname">
+       <label > <br>
+        </label>
+        <input name="absence" type="number" placeholder="Nombre D'Absence">
+    </div>
+    <button type="submit" class="btn">Inscrire</button>
+</form>
+</body>
+</html>
